@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context="com.partheniadisk.bliner.NavActivity"
+    tools:deviceIds="wear">
+
+
+        <TextView
+            android:id="@+id/Instruction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="2. Keep watch raised, then turn to 2 o'clock."
+            android:textSize="28sp"
+            app:layout_box="all" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Stats"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            app:layout_box="all"
+            />
+
+        <TextView
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:textColor="@android:color/white"
+            app:layout_box="all" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow"
+            android:tint="@color/colorPrimary"
+            android:visibility="gone"
+            android:rotation="0"/>
+
+    <android.support.wearable.view.DismissOverlayView
+        android:id="@+id/dismiss_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</android.support.wearable.view.BoxInsetLayout>
